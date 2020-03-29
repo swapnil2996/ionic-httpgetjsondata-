@@ -1,31 +1,32 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-icon[name="trash-bin-outline"] {
+  color: red;
+  justify-self: end;
+  align-self: center;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-icon[name="pencil-outline"] {
+  color: blue;
+  justify-self: end;
+  align-self: center;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-icon[name="person-add-outline"] {
+  justify-self: end;
+  align-self: center;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
-#container a {
-  text-decoration: none;
+ion-fab {
+  color: wheat;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
+
+ion-fab-button {
+  height: 40px;
+  width: 40px;
 }
