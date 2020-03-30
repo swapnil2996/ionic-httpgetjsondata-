@@ -31,7 +31,7 @@ export class HomePage {
   deleteUser(id) {
     const name = this.users[id].first_name + " " + this.users[id].last_name + " is deleted.";
     this.users.splice(id, 1);
-    this.presentToast(name, "danger");
+    this.presentToast(name, "primary");
   }
 
   async addUser() {

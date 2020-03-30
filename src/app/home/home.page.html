@@ -1,15 +1,17 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="warning">
-    <ion-title style="letter-spacing: 1px;">
+  <ion-toolbar color="primary">
+    <ion-title>
       USERS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <h5><b>List of Users</b></h5>
   <ion-list *ngFor="let user of users; let i = index" lines="none">
-
+    
     <ion-item>
+      
       <ion-avatar slot="start">
         <img [src]="user.avatar || defaultImage">
       </ion-avatar>
@@ -18,12 +20,9 @@
         <p>{{user.email}}</p>
       </ion-label>
       <ion-avatar slot="end">
-        <ion-icon name="trash-bin-outline" (click)="deleteUser(i)"></ion-icon>
-        <ion-icon name="pencil-outline" (click)="editUser(i)"></ion-icon>
+        <ion-icon name="trash" (click)="deleteUser(i)"></ion-icon>
+        <ion-icon name="create-sharp" (click)="editUser(i)"></ion-icon>
       </ion-avatar>
-      <!-- <ion-avatar slot="end" (click)="deleteUser(i)">
-      
-      </ion-avatar> -->
     </ion-item>
   </ion-list>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
